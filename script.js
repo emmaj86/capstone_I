@@ -34,7 +34,7 @@ function submit() {
 }
 
 // JavaScript to display items in the "Save for later" folder
-for (let i = 0; i < sessionStorage.length; i++) {
+for (let i = 1; i < sessionStorage.length; i++) {
   let itemName = sessionStorage.key(i); //item name
   let itemValue = sessionStorage.getItem(itemName); //item value
   document.getElementById("saved-items").innerHTML +=
