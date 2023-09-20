@@ -11,7 +11,7 @@ for (i of btns) {
     // Add item to the "Save for later" folder
     sessionStorage.setItem(id, document.getElementById(id).innerHTML);
     // Display an alert to show how many items are in the "Saved folder"
-    alert(`You have ${sessionStorage.length} items in your saved folder.`);
+    alert(`You have ${sessionStorage.length - 1} items in your saved folder.`);
   });
 }
 
