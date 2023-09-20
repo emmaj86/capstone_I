@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web development</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--header-->
+    <header>
+      <h1>Emma-jane Jamieson</h1>
+      <h2>Web development enthusiast</h2>
+    </header>
+
+    <!--navbar-->
+    <nav>
+      <a href="#">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="save.html"> Saved items</a>
+    </nav>
+    <!--main-->
+
+    <section id="what_is">
+      <h3>What is web development?</h3>
+      <img class="top_images" src="images/web_dev.jpg" alt="laptop screen" />
+      <p>
+        Web development refers in general to the tasks associated with
+        developing websites for hosting via intranet or internet. The web
+        development process includes web design, web content development,
+        client-side/server-side scripting and network security configuration,
+        among other tasks (Techopedia). Web developers work with many languages.
+        Some only work with front end which is the client side, like a website.
+        Back end developers work with the server side which is what users cant
+        see like databases of users information for example. You also get full
+        stack developers who work with both back end and front end applications.
+      </p>
+      <button class="save-btn">Save for later</button>
+      <!-- Use an element to toggle between a like/dislike icon -->
+      <i onclick="likeFunction(this)" class="fa fa-thumbs-up"></i>
+    </section>
+    <section id="languages">
+      <h3>Languages used by web developers</h3>
+      <img
+        class="top_images"
+        id="web_languages"
+        src="images/download.png"
+        alt="image of web development languages"
+      />
+
+      <button class="save-btn">Save for later</button>
+      <i onclick="likeFunction(this)" class="fa fa-thumbs-up"></i>
+    </section>
+    <section id="table">
+      <p>This table shows some, but not all, of the languages used</p>
+      <table>
+        <tr>
+          <th>Front end</th>
+          <th>Back end</th>
+        </tr>
+        <tr>
+          <td>HTML</td>
+          <td>PHP</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Ruby</td>
+        </tr>
+        <tr>
+          <td>Javascript</td>
+          <td>Python</td>
+        </tr>
+      </table>
+      <button class="save-btn">Save for later</button>
+      <i onclick="likeFunction(this)" class="fa fa-thumbs-up"></i>
+    </section>
+    <section id="portfolio">
+      <h3>My portfolio</h3>
+      <p>
+        Images from some websites I've built, visit my
+        <a href="https://github.com/emmaj86">GitHub</a> to see more.
+      </p>
+      <img
+        class="portfolio_img"
+        src="images/gws1.png"
+        alt="groundworks webpage screenshot"
+      />
+      <img
+        class="portfolio_img"
+        src="images/gws2.png"
+        alt="groundworks webpage screenshot"
+      />
+      <img
+        class="portfolio_img"
+        src="images/solar_system.png"
+        alt="solar system webpage screenshot"
+      />
+      <button class="save-btn">Save for later</button>
+      <i onclick="likeFunction(this)" class="fa fa-thumbs-up"></i>
+    </section>
+    <section class="comments">
+      <!-- <form id="commentForm"> -->
+      <textarea
+        name="commentForm"
+        id="commentForm"
+        placeholder="Please enter any comments here...."
+      ></textarea>
+
+      <button onclick="submit()">Submit</button>
+
+      <!-- </form> -->
+      <ul id="commentList"></ul>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
